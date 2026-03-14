@@ -35,9 +35,14 @@
             border: 1px solid #ccc;
             padding: 20px;
             z-index: 1000;
+            white-space: pre-wrap;
 
         }
         .closePopup {
+            position: fixed;
+
+        }
+        .closeAllPopup {
             position: fixed;
 
         }
@@ -57,117 +62,280 @@
     <header>
         <h1>Leaving the Poison Orchard: Navigating the Right to Privacy in the US</h1>
     </header>
-
-    <p> 
-        We often are surrounded by a seemingly-pressing discourse about how to balance the right to one’s own privacy with the “greater good”--a country might need to overstep in order to protect you, or, perhaps, protect others from you. Studying the history of wiretapping and other political utilizations of technological developments throughout time provides context for the ways our public opinion has changed. We frame this discussion about when surveillance should be legal. However, this can lead us down interpretive <span class="popuplink" data-target="hypothetical" style="color: rgb(255, 255, 255);">hypothetical</span>riddles that seem difficult to come out of with clarity. 
-        I propose that we need to step outside this legal framework to exit the paradox provided by the legal complex we live in, thinking about rights to privacy in terms of natural law rather than US law. We can examine cold war surveillance to look at how the idea of negotiating legality inherently protects imperial interests and forecloses the possibility for true liberation. 
-        <span class="popuplink" data-target="intro" style="color: rgb(255, 255, 255);">Why exactly is the legal framework an issue?</span>
-    </p>
     <p>
+        <span style="color: rgb(0, 0, 0);">By: Saraphina Forman. CS 1805. Timothy Edgar. March 13, 2026.</span> <span class="popuplink" data-target="bibliography" style="font-style: italic;">Works cited.</span> 
+    </p> 
+
+    <button onclick="openAllPopups()">see all</button>
+    <button onclick="closeAllPopups()">see none</button>
+    <br>
+    <br>
+    <br>
+    <img class="popuplink" data-target="start" src="greenlight.jpg" alt="Start"></img>
+    <div id="start" class="popup" style="display:none;"> <span style="font-style: italic;">Intro. </span>We are surrounded by discourse about balancing the right to privacy with the "greater good”—the country might need to overstep to protect you, or perhaps protect others from you. Studying the history of wiretapping and bugging provides context for how public opinion on surveillance technology has shifted. We frame this discussion about when surveillance should be legal. However, this can lead us down can lead us down <span class="popuplink" data-target="hypothetical" style="color: rgb(255, 255, 255);">hypothetical </span> riddles that are difficult to emerge from with clarity. 
+    Here, I consider stepping outside the legal framework to exit the paradox, thinking about privacy not in terms of US law but in terms of what law forecloses. Cold War surveillance shows how negotiating legality inherently protects imperial interests and forecloses the possibility of true liberation.
+    <span class="popuplink" data-target="intro" style="color: rgb(255, 255, 255);">Why exactly is the legal framework an issue?</span>
+    <button class="closePopup">Close</button>
+    </div>
+    <img class="popuplink" data-target="perfectvictim" src="carl-heinrich-bloch_perfectvictim.jpg" alt="Pefect Victim" ></img>
+    <!-- <p>
         <span class="popuplink" data-target="perfectvictim" style="color: rgb(255, 255, 255);">The Perfect Victim</span>
-    </p>
-    <p>
+    </p>  -->
+    <img class="popuplink" data-target="news" src="mail.jpg" alt="News" ></img>
+    <div id="news" class="popup" style="display:none;">
+        <span class="popuplink2" data-target="courtscantsaveus rain" style="color: rgb(81, 255, 0);">Bad news </span>,
+        <span class="popuplink2" data-target="neveranyway fireworks" style="color: rgb(255, 127, 80);">good news</span>.
+    <button class="closePopup">Close</button>
+    </div>
+    <img class="popuplink" data-target="jurisgenesis" src="steve-Gschmeissner-Science-Photo-Library.jpg" alt="Jurisgenesis"></img>
+    <!-- <p>
         <span class="popuplink" data-target="jurisgenesis" style="color: rgb(255, 255, 255);">Jurisgenesis</span>
-    </p>
-    <p>
-        <span class="popuplink" data-target="opennessclosedness" style="color: rgb(255, 255, 255);">Open and closed</span>
-    </p>
-    <p>
+    </p> -->
+    <img class="popuplink" data-target="conclusion" src="bbc.png" alt="Feeding ourselves" ></img>
+    <!-- <p>
         <span class="popuplink" data-target="conclusion" style="color: rgb(255, 255, 255);">Food to tide us over</span>
-    </p>
-    <div id="intro" class="popup" style="display:none;">
-        <p>First, consider the <span class="popuplink" data-target="tree-img" style="color: cyan;">“fruit of the poisonous tree”</span> doctrine, which is a metaphor in law conveying the idea that, if evidence is tainted, results obtained using that evidence will also be tainted. Effectively, this idea “extends the exclusionary rule to make evidence inadmissible in court if it was derived from evidence that was illegally obtained” (Cornell Law School).
-        However, if we truly embrace this sort of framework, doesn’t that undermine US law itself, considering the fact that the US is at heart a poison fruit as it is built upon the labor of enslaved people and Indigneous genocide?
-        Of course, we can’t extend the metaphor to the point of discarding all of human history due to all its little wrongdoings long ago, nor is this to make a surface-level discrediting of the character we seek to critique. But in this case, the recentness of the situation at hands and the direct ties to its legal systems created intimately from this poison wood is quite tangible, the effects of the poison are not metaphorical in the US. Given that, it’s worth taking a look at what happens after you discard the fruit of the poisonous tree, after you get up from under it? Not just the evidence, but the laws that branched off of slave laws. What do you eat? How do you conceptualize what’s just?  
-        Black anarchist William C. Anderson explains the issues with trying to have a conversation about systemic justice with a reformist framework: “When I speak of abolition—that is, the dismantling rather than mere reforming of the institutions that maintain capitalism, white supremacy, and other oppressions—I am not focused on one aspect of a despicable situation as much as I am questioning the situation as a whole. The United States does not have problems, the United States is the problem.”
-        We may toss out this apple or that one, take the ones that are slightly less poisonous, but at the end of the day, “People who insist on compromising with the forces that are determined to exterminate us are only attempting to rearrange the terms of a perpetual crisis.” Furthermore, whatever gains are made can easily be undone. “Everything that we claim as an accomplishment through machinery that our oppressors control can ultimately be undone.” 
-        The idea of crime is very much tied up with blackness in the carceral state that is the US. For example, in the 1857 Dred Scott Supreme Court decision, the rationale said  “The words ‘people of the United States’ and ‘citizens’ are synonymous terms,” and it went on to say, when it came to Black people, “We think they are not, and that they are not included, and were not intended to be included, under the word ‘citizens’ in the Constitution, and can therefore claim none of the rights and privileges which that instrument provides for and secures to citizens of the United States.”
-        These effects carry over to today and the carceral state that permeates the “real” state in institutionalized racism. Indeed, “No matter how much we achieve, accumulate, or excel at playing the game, we’re always capable of being caged, repressed, brutalized, or killed because we’re Black.”
-        Given this racialization of innocence, we must be particularly watchful of a reformist tilt to our conversations of the civil rights movement. Anderson states that “The civil rights movement is selectively remembered in popular and state-sponsored retellings of history, reducing a complex phenomenon to favored leaders, organizations, and actions. The distorted focus on reformist efforts creates a battle within history itself.”
-        History around surveillance specifically within the civil rights movement and communism(?), then, can thus prove fertile ground for thinking about legality and offer a fresh perspective on surveillance which can often be analyzed too narrowly.
-        </p>
-        <button class="closePopup">Close</button>
+    </p> -->
+
+    <div id="intro" class="popup" style="display:none;"> First, consider the <span class="popuplink" data-target="tree-img" style="color: cyan;">“fruit of the poisonous tree”</span> doctrine, which is a metaphor in law conveying the idea that, if evidence is tainted, results obtained using that evidence will also be tainted. Effectively, this idea "extends the exclusionary rule to make evidence inadmissible in court if it was derived from evidence that was illegally obtained” (Cornell Law School).
+    However, if we truly embrace this sort of framework, doesn’t that undermine US law itself, considering the fact that the US is at heart a poison fruit as it is built upon the labor of enslaved people and Indigenous genocide?
+    Of course, we can’t extend the metaphor to the point of discarding all of human history due to all its little wrongdoings long ago, nor is this to make a surface-level discrediting of the character we seek to critique. But in this case, the recentness of the situation at hand and the direct ties to its legal systems created intimately from this poison wood are quite tangible; the effects of the poison are not metaphorical in the US. Given that, it’s worth taking a look at what happens after you discard the fruit of the poisonous tree, after you get up from under it? Not just the evidence, but the laws that branched off from slavery laws. <span class="popuplink" data-target="intro2" style="color: rgb(255, 255, 255);">What do you eat?</span>
+    <button class="closePopup">Close</button>
     </div>
 
-    <div id="hypothetical" class="popup" style="display:none;">
-        <p>The hypothetical terrible person (in class/scholarly) and national security/threat (said by politicians/ said by LBJ) case is an extreme rhetorical issue more than anything__. And it is a powerful object being used as a rhetorical issue. Basically it's another configuration of racism because it can quickly turn an unfavored subject–anyone who threatens democracy–wrong. 
-        </p>
-        <button class="closePopup">Close</button>
+    <div id="intro2" class="popup" style="display:none;"> <span style="font-style: italic;">The poison tree pt. 2.</span> Black anarchist William C. Anderson summarizes the issues with trying to have a conversation about systemic justice within a reformist framework: "When I speak of abolition..I am not focused on one aspect of a despicable situation as much as I am questioning the situation as a whole. The United States does not have problems, the United States is the problem.”
+    We may toss out this apple or that one, take the ones that are slightly less poisonous, but at the end of the day, compromise just remixes the enduring death wish. Furthermore, gains are passing.
+    We have to go through the state’s channels and speak in its language for every reformist win, and that undercuts the thrust of the thing. Legal reform on surveillance is telling the state that it can decide what it’s allowed to do. It's a tautology. It’s letting the state decide what kind of injustices we deserve.
+    Essentially, the state is deciding <span class="popuplink" data-target="intro3" style="color: rgb(255, 255, 255);">how much</span> power it will take <span class="popuplink" data-target="intro4" style="color: rgb(255, 255, 255);">over us.</span> 
+    <button class="closePopup">Close</button>
     </div>
 
-    <div id="perfectvictim" class="popup" style="display:none;">
-        <p>Cold war surveillance, and even more so, our retelling of its rationales and assessment of its legitimacy, is laden with “perfect victim” mythology–the idea that if you are not pure (read: white), “sympathetic” or “relatable,” palatable to conventional tastes, then the crime done unto you is your fault.There is a black and white situation where a completely innocent victim is worth protecting ,whereas a victim with any drop of fighting back or doubt of participation is disqualified from justice. 
-        And of course, if there is only justice guaranteed for a specific ideal of subject, there is no justice. This perfect victim narrative is especially noticeable in the cold war surveillance FBI cases of both <span class="popuplink" data-target="coplon" style="color: rgb(255, 255, 255);">Judith Coplon</span> and <span class="popuplink" data-target="mlk" style="color: rgb(255, 255, 255);">Martin Luther King, Jr.</span>
-        Loch Johnson describes  the government project COINTELPRO: “The Bureau operations involved not only spying against Americans but also secret efforts to destroy the jobs, marriages, and reputations of individuals whose only sin had been to engage in activities protected by the First Amendment, such as protesting against the war in Vietnam or joining the civil rights movement” (Loch Johnson). Religious word choices like “sin” and key ideas to the middle class white nuclear family– “jobs” “marriage” and “reputation” are invoked for presumed immediate innocence and sympathy; these are “civilian” citizens who do not deserve surveillance, as opposed to real criminals. The “protests” cited as examples are convenient ones that have been deeply sanitized in their narratives and in pop culture almost unanimously on the “good side.” There is no mention of the less sanitized contemporary movements such as the Black Panther Party or __.
-        </p>
-        <button class="closePopup">Close</button>
+    <div id="intro3" class="popup" style="display:none;"><span style="font-style: italic;">The poison tree pt. 3.</span>This is not the cynical argument of "the problem is giving the state power to decide its reach, because if power is available, an entity will always take more." It's more abstract—the state is the embodiment of power, so even laws limiting its power are an expression of its power; moreover, the state will only "follow” its laws when it wants to anyway. 
+    <button class="closePopup">Close</button>
     </div>
-    <div id="coplon" class="popup" style="display:none;">
-        <p><span class="popuplink" data-target="coplon-img" style="color: cyan;">Judith</span> Coplon worked briefly for the US and was prosecuted for being a soviet spy but ultimately got off because the evidence against her was acquired through illegal wiretapping.
-        The official 1950 United States vs Coplon decision uses words common to the religious context e.g. “consummation” in its report; echoes the moralism of the early days of US privacy laws where Benjamin Franklin leveraged enlightenment and protestant values tying back to the Protestantism that underlies the US individual society. 
-        Coplon’s daughter emphasizes Coplon’s innocence to this day, rationalizing the ample evidence that Coplon was a spy by making it seem palatable to liberals, almost saccharine in its evasiveness:
-        “It’s very hair-raising to read about your mother being given a code name and moved around like a chess piece,” the daughter added. “Was she a spy? I think it’s another question that I ask: Was she part of a community that felt that they were going to bring, by their actions, an age of peace and justice and an equal share for all and the abolishing of color lines and class lines?”
-        “If these were things that she actually did, she was not defining them as espionage,” Ms. Socolov continued. “If you feel that what you’re doing answers to a higher ideal, it’s not treason.”
-        Just say she was a spy, girl!
-        An extremely clean, pure self image works as a pragmatic performance of denying guilt but it is counterproductive to the effort to build a world that isn't so selective in its justice. 
-        </p>
-        <button class="closePopup">Close</button>
-    </div>
-    <div id="mlk" class="popup" style="display:none;">
-        <p>A similar whitewashed narrative surrounds MLK, this time as a sort of generic martyr.
-        The church committee transcript reads:
-        Mr.  ADAMS.  There  were  approximately  twenty-five  incidents  of  actions  taken  [to  discredit  Dr.  King]  .  .  .  I  see  no statutory  basis  or  no  basis  of  justification  for  the  activity.
-        The  CHAIRMAN.  Was  Dr.  King,  in  his  advocacy  of  equal rights  for black  citizens,  advocating  a  course  of  action  that in  the  opinion  of  the  FBI  constituted  a  crime?
-        Mr.  ADAMS. No,  sir.
-        The  CHAPMAN.  He  was  preaching  non-violence  was he  not, as  a  method  of  achieving  equal  rights  for  black  citizens?
-        Mr.  ADAMS.  That’s  right  .  .  .  Now  as  far  as  the  activities which  you  are  asking  about,  the  discrediting,  I  know  of  no basis  for  that  and  I  will  not  attempt  to  justify  it. (Church Committee)
-        If King had ambiguously endorsed one violent demonstration, he would all of a sudden it'd all be discredited? The FBI by nature would take a violent action to be a threat worth pursuing, but if we cast out the black-and-white narrative in favor of nuance, would a couple of violent actions really be worth the surveillance of Dr. King either? 
-        Rather, it is clear that it is the liberation of Black people that is the true threat to the state whose interests the FBI defend–and “violence,” like “crime,” is defined in connection with blackness in the first place so as to rationalize the abuse of King regardless. It is the retelling of this narrative where the surveillance was a “mistake,” a wrongdoing on this innocent man who just had a dream, that tries to obscure the true role of the state, which was functioning as intended.
-        </p>
-        <button class="closePopup">Close</button>
-    </div>
-    <div id="jurisgenesis" class="popup" style="display:none;">
-        <p>Confusions about norms and jurisgenesis/public opion/instinct
-        The confused American politicians at the center of these stories make more sense when thought of the paradoxical context they exist in. In the multiplicity of legal meanings, figures such as LBJ are in charge of upholding one. 
-        LBJ, described as “nothing  if not contradictory" had an extreme doubt that showcases the multiple legal meanings he was immersed in and his split sympathies towards them. Some of the the readings give a redemptive perspective to LBJ’s stark hypocrisy between his colorful statements against wiretapping–”I’m a two million against it [___]--and his continued allowance of it; they say this denunciation was never “a promise  not to enforce  a law”but rather a “legitimate expression  of his views  and  a call for congress  to  reexamine” the newly-passed 1968 “first federal law authorizing wiretapping” (walker). 
-        And of course, LBJ ultimately was on the side of the empire. Maintaining the order takes a lot of force and violence, even if it's often masked through the murky, ephemeral connotation of such things as “wiretaps” and “watching”, as we saw through the FBI’s struggle to surveillance of MLK. 
-        Hoover had his finger on the jurisgenerative pulse of the US as well, and perhaps more prescriptively sought to control it. 
 
-        ___kind of unclear about this section___
-        </p>
-        <button class="closePopup">Close</button>
+    <div id="intro4" class="popup" style="display:none;"><span style="font-style: italic;">The poison tree pt 4.</span>The idea of crime is very much tied up with blackness in the carceral state that is the US. For example, in the 1857 Dred Scott Supreme Court decision, the rationale said "The words ‘people of the United States’ and ‘citizens’ are synonymous terms,” and it went on to say, when it came to Black people, "We think they are not, and that they are not included, and were not intended to be included, under the word ‘citizens’ in the Constitution, and can therefore claim none of the rights and privileges which that instrument provides for and secures to citizens of the United States” (Taney, cited by Anderson).
+    These effects carry over to today and the carceral state that permeates the "real” state in institutionalized racism. Indeed, Anderson reminds us that no accumulation of gains exempts Black people from the violence of the carceral state.
+    Given this racialization of innocence, we must be particularly watchful of a reformist tilt to our conversations about the civil rights movement. Anderson states that "The civil rights movement is selectively remembered in popular and state-sponsored retellings of history, reducing a complex phenomenon to favored leaders, organizations, and actions. The distorted focus on reformist efforts creates a battle within history itself.” 
+    History around surveillance, specifically within the civil rights movement and communism, then, can thus prove fertile ground for thinking about legality and offer a fresh perspective on surveillance, which is sometimes analyzed too narrowly.
+    <button class="closePopup">Close</button>
     </div>
     
-    <div id="opennessclosedness" class="popup" style="display:none;">
-        <p>
-            Fundamental to all of this is a conversation about opacity. We talk about information in terms of “openness” and closeness, or secretiveness, or darkness. But the meanings are not so clear. 
-            Some see it as freedom as everything is opaque or private–except, some things,  the FBI will have to force open and listen in on. (LBJ expresses this in his 1967 union address [link to above i think ill put this in the legality section.) 
-            Meanwhile, some people see freedom as everything is open–but we as the FBI need to keep some private. For example, presidents after world war 2 generally “worried  about  a broad freedom  of  information  law[,] believing that  the  release  of  some  information could  harm  national  security.” They fear things being in the open. Similarly, the FOIA is based on the idea that “a  democracy works  best  when the  people  have  all the information"--of course LBJ quickly follows this with the concession that the greater good may “require  that  some documents not be made  available"--and is “one of the  greatest  pieces  of civil liberties  legislation  ever  passed”. And why was the act not reported on in the press to the degree of some even arguing that it was intentionally not kept secret? Perhaps there was fear about what it would mean to be open about the openness as liberation that would now be enforced–i.e. that politicians should be held to? 
-            Taken together with the latter interpretation, the first interpretation could perhaps be the idea of keeping private the fact that the FBI is paying attention.
-            In action, this meta-level of surveillance can be leveraged. For example, the President said to King in a conversation “I assume you  know  you’re  under  very  close  surveillance”
-            This is a weird “president being open about the fact that your life is being open” situation.
-            Versus the harder level of surveillance is being secretly collecting data
-            But this is a common tactic especially in less resourced areas where its acc a performance of surveilling them, as intimidation. Cuz they might not have the real resources to do much. Some scandals are even manufactured just for this (e.g. Chile). The spectacle of –i cant believe the law is violated! To emphasize that “the law isn't meant for you” for some “enemies” and for the everyday citizens, that it is a norm that is punished, i.e. that the system works. 
-        </p>
+    <div id="bibliography" class="popup" style="display:none;"><span style="font-style: italic;">Works Cited.</span>
+
+    Anderson, William C. The Nation on No Map. AK Press, 2021.
+    Baudrillard, Jean. Simulacra and Simulation.
+    Cover, Robert. "Nomos and Narrative." Harvard Law Review, 1983.
+    Glissant, Édouard. Caribbean Discourse.
+    Johnson, Loch K. A Season of Inquiry Revisited: The Church Committee Confronts America's Spy Agencies.
+    La Boétie, Étienne de. Discourse on Voluntary Servitude.
+    Lloyd, David. “The social life of black things: Fred Moten’s consent not to be a single being”, Radical Philosophy 207, Spring 2020, pp. 079–092. https://www.radicalphilosophy.com/article/the-social-life-of-black-things
+    Moten, Fred. In the Break: The Aesthetics of the Black Radical Tradition. University of Minnesota Press, 2003. 
+    Moten, Fred, “Jurisgenerative grammar (for alto).” The Oxford Handbook of Critical Improvisation Studies, Volume 1, Oxford Handbooks, 2013. https://doi.org/10.1093/oxfordhb/9780195370935.013.017.
+    Vincent, David. “Surveillance, privacy and history.” https://historyandpolicy.org/policy-papers/papers/surveillance-privacy-and-history/ 
+    Walker, Samuel. The Rights Revolution.
+    Warner, Michael. Publics and Counterpublics.
+    Wise, David. “The Campaign to Destroy Martin Luther King.”
+    Materials from this course.
+
+    Photo credits: 
+    A Step Beyond
+    BBC
+    Bettman via Getty
+    Carl Heinrich Bloch
+    civilrightsteaching.org
+    Cyber Agents Inc.
+    Donald Cunningham
+    Etta Hulme
+    Herbert Block
+    Los Angeles Times Photographic Archive/UCLA Library.jpg
+    Marinaphx
+    NY Times
+    Pieter Bruegel the Elder
+    Steve Gschmeissner/Science Photo Library
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="hypothetical" class="popup" style="display:none;">This project is not meant to avoid taking a crack at the "when should surveillance be illegal?" paradox, but rather it claims a genuine deficiency of turning it into a riddle or intellectual thought experiment.
+    It is worth addressing this recurrent rhetorical device head-on: "yeah wiretapping’s bad, but what if there’s a terrorist who's going to kill 50 people, isn't it worth it to wiretap them then?” This line of thinking is reminiscent of other thought lines of arguments for things like torture, because it is trying to leverage economic cost-benefit analysis to facilitate compromising on civil liberties. (It’s interesting that surveillance may seem much less intense than something like torture, but often provokes a similar sort of disgust.) For example, the government’s inaction in stopping King’s outlandish surveillance " appears to have stemmed from a belief that it was safer to permit the FBI to conduct the investigation than to stop the Bureau and run the risk of charges that the FBI was being muzzled for political reasons” (Church Committee 92). With the muzzle on, who is the FBI missing out on biting?
+    The common "national security threat” exception to surveillance bills is another invocation of this hypothetical Bad Guy, this figure that’s so dangerous even in his spectral, non-existent form that he is worth the harm of surveilling citizens if you can find him. From the very fact that the government's assessment of who constitutes a national security threat has been off base in the most conservative judgment, the policy is not working. 
+    Beyond that, the hypothetical figure is a fear tactic, serving to justify violence.
+    This figure plays the role of the class "Other” that helps shepherd everyone else into line against them. 
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="perfectvictim" class="popup" style="display:none;"><span style="font-style: italic;">The Perfect Victim.</span> Cold war surveillance, and even more so, our retelling of its rationales and re-evaluation of its legitimacy, is laden with "perfect victim” mythology–the idea that if you are not pure, "sympathetic,” relatable, and palatable to conventional tastes, then the crime done unto you is your fault. This creates a black and white scenario where only a completely innocent victim is worth protecting, while a victim who fought back or had any prior involvement is disqualified from justice. Anything less than perfect passivity voids the claim. The invocation of the "good victim,” who in these surveillance cases, actually takes the form of the "respectable criminal” who didn’t deserve the clumsy attacks of the state, implicitly preserves the "bad victim” who isn’t worth protecting or "legitimate criminal” who forgoes their rights. 
+    And of course, if there is only justice guaranteed for a subject that fits a specific ideal, there is no justice. The state and its media can always deem "non-citizen” subjects and dissidents as the criminal Other — that's what it was built to do. Even an absolute wiretapping ban, which is unlikely, illustrates this: it would still only protect those the state already recognizes as rights-bearing subjects. Everyone else–and the definition of who everyone else is–remains at the whim of the state; the government, as history shows, is not bound by its own laws anyway.
+    This perfect victim narrative is especially noticeable in the Cold War surveillance FBI cases of both <span class="popuplink" data-target="coplon" style="color: rgb(255, 255, 255);">Judith Coplon</span> and <span class="popuplink" data-target="mlk" style="color: rgb(255, 255, 255);">Martin Luther King, Jr.</span>
+    Loch Johnson describes the government project COINTELPRO: "The Bureau operations involved not only spying against Americans but also secret efforts to destroy the jobs, marriages, and reputations of individuals whose only sin had been to engage in activities protected by the First Amendment, such as protesting against the war in Vietnam or joining the civil rights movement” (Loch Johnson). Religious word choices like "sin” and key ideas to the middle class white nuclear family– "jobs” "marriage” and "reputation” are invoked for presumed immediate innocence and sympathy; these are "civilians” who do not deserve surveillance, as opposed to real criminals. The "protests” cited as examples are convenient ones that have been deeply sanitized in their narratives and in pop culture almost unanimously on the "good side.” There is no mention of the less sanitized concurrent movements, such as the Black Panther Party or the Weather Underground (although these have surely received their fair share of aestheticization in certain leftist media spaces, especially in recent times).
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="coplon" class="popup" style="display:none;"><span class="popuplink" data-target="coplon-img" style="color: cyan;">Judith</span> Coplon worked briefly for the US and was prosecuted for being a soviet spy, but ultimately got off because the evidence against her was acquired through illegal wiretapping.
+    The official 1950 United States v. Coplon decision uses words common to the religious context, e.g., "consummation” in its report; it echoes the moralism of the early days of US privacy laws, where Benjamin Franklin leveraged enlightenment and Protestant values going back to the foundations of the US. 
+    Coplon’s daughter continued to emphasize her mother’s innocence to this day, rationalizing the ample evidence that Coplon was a spy by making it seem palatable to liberals, almost saccharine in its evasiveness. The New York Times quotes her below: <span style="font-style: italic;">
+    “It’s very hair-raising to read about your mother being given a code name and moved around like a chess piece,” the daughter added. "Was she a spy? I think it’s another question that I ask: Was she part of a community that felt that they were going to bring, by their actions, an age of peace and justice and an equal share for all and the abolishing of color lines and class lines?”
+    “If these were things that she actually did, she was not defining them as espionage,” Ms. Socolov continued. "If you feel that what you’re doing answers to a higher ideal, it’s not treason.”</span>
+    To be sure, an extremely clean, pure self-image makes sense as a pragmatic performance of denying guilt, but it hampers the construction of a country that isn't so selective in its justice. 
+    <button class="closePopup">Close</button>
+    </div>
+    <div id="mlk" class="popup" style="display:none;">A similar whitewashed narrative surrounds <span class="popuplink" data-target="mlk-img" style="color: cyan;">Martin Luther King, Jr.,</span> this time casting him as a generic sort of martyr.
+    A Church Committee hearing transcript reads:
+    <span style="font-style: italic;">
+    Mr. ADAMS. There were approximately twenty-five incidents of actions taken [to discredit Dr. King] . . . I see no statutory basis or no basis of justification for the activity.
+    The CHAIRMAN. Was Dr. King, in his advocacy of equal rights for black citizens, advocating a course of action that in the opinion of the FBI constituted a crime?
+    Mr. ADAMS. No, sir.
+    The CHAPMAN. He was preaching non-violence was he not, as a method of achieving equal rights for black citizens?
+    Mr. ADAMS. That’s right . . . Now as far as the activities which you are asking about, the discrediting, I know of no basis for that and I will not attempt to justify it.
+    </span>
+    Why is the concept of "non-violence” so fundamental to sympathy towards King? 
+    It is the liberation of Black people that is the true threat to the state whose interests the FBI defends; "violence,” like "crime,” has long been defined in connection with blackness in the first place so as to rationalize the abuse of King regardless. It is the retelling of this narrative where the surveillance was a "mistake,” a wrongdoing on this innocent man who just had a dream, that tries to obscure the true role of the state, which was functioning as intended.
+
+    Therefore, legal cases like King’s surveillance (Liberal narrative: he was a nonviolent man, how dare they surveil him!) and Coplon (Her family: if she was doing communism, she was doing it with morally good intentions; therefore she wasn't guilty) are counterproductive. Imperial concessions are not worth celebrating nor even accepting. As poet and theorist Fred Moten says, "To refuse the poisonous gift of an autonomy or a citizenship or a right that is always withheld is also to refuse the tortured logic that apprehends racialisation… as an enduring social death.”
+    <span class="popuplink" data-target="courtsaveus" style="color: rgb(255, 255, 255);">So,</span>
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="courtscantsaveus" class="popup" style="display:none; font-family: cursive;">
+    So, courts can't save us. <span class="popuplink" data-target="neveranyway" style="color: rgb(255, 255, 255);">But also...</span>
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="neveranyway" class="popup" style="display:none; font-family: fantasy;">
+    They never generated legal meaning <span class="popuplink" data-target="jurisgenesis" style="color: rgb(255, 255, 255);">anyway.</span>
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="jurisgenesis" class="popup" style="display:none;"><span style="font-style: italic;">Jurisgenesis.</span> Robert Cover’s term jurisgenesis, taken up by Moten, is useful—this is the "capacity to create legal meaning” which "requires no state,” from which the courts select and suppress. 
+    Jurisgenesis transcends the law "as written and determined by any given legal system” (David Lloyd, citing Moten and Cover). Thus, the reason for courts is not the need for law but "the need to suppress the law, to choose between two or more laws, to impose upon laws a hierarchy. It is the multiplicity of laws, the fecundity of the principle of jurisgenesis, that creates the problem for which the court and the state are the solution” (Moten).
+    Here, we see that meaning proliferates outside the courtroom, in various creative, collective narratives about what privacy is and what kind of culture we maintain for ourselves. The courts just stamp it "official.” <span class="popuplink" data-target="juris-example" style="color: rgb(255, 255, 255);">For example...</span>
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="juris-example" class="popup" style="display:none;"><span style="font-style: italic;">Jurisgenesis pt. 2</span> Justice Black’s dissenting opinion on the 1967 Katz v. United States case reads "The Court talks about a constitutional ‘right of privacy’ as though there is some constitutional provision or provisions forbidding any law ever to be passed which might abridge the ‘privacy’ of individuals. But there is not.”
+    Justice Black takes a "facts and logic” approach to try to take the wind out of instincts towards justice and discredit legal meanings that aren’t literally enshrined in the courts, but in the process, he admits that a powerful public understanding does not match what’s on file. Note that jurisgenesis does not imply an essential, independent "natural law” latent in the people. The beauty of jurisgenesis is that layers are continually appended. Our ability to have "extra legal meaning” much like extra grammatical language predates an unending oscillation between systemic and anti-systemic by being a parallel, fertile, "endless mutation and differentiation” (Lloyd).
+    Figures such as Lyndon B. Johnson are similarly tasked with upholding a single legal meaning, supposedly coming to ease the confusion of these paradoxical legal contexts with standardization and a dash of social control.
+    Of course, LBJ, described as "nothing if not contradictory,” was himself immersed in multiple legal meanings, to which he expressed split sympathies. Some historians offer a redemptive reading of the stark hypocrisy between LBJ’s colorful statements against wiretapping–“I’m a red-hot one-million-two percent civil liberties man, and I'm just against [wiretappers]”—and his continued allowance of the practice; Walker argues LBJ’s denunciation was never "a promise not to enforce a law” but rather a "legitimate expression of his views and a call for congress to reexamine” the newly-passed 1968 "first federal law authorizing wiretapping” (Walker). Perhaps LBJ's waffling came from an intuition that wiretapping violated civil liberties, but a difficulty following that logic to its conclusion, which would require the recognition of the fugitive. What turmoil!
+    Whatever the case, LBJ ultimately was on the side of the empire, because the threat of the "many worlds” created by jurisgenesis spawns "imperial virtues and the imperial mode of world maintenance.” This maintenance, which is just as energy-intensive as creating worlds, involves force and violence, even if it's often masked through a lower-profile "watching,” as we saw through the FBI’s struggle to surveil King. 
+    J. Edgar Hoover, too, was on the jurisgenesis patrol; he "understood better than many others in Washington that public attitudes about privacy and wiretapping were changing rapidly,” and after Senator Long’s congressional hearings on snooping, he described an "undeclared war on privacy.”
+    <span class="popuplink" data-target="juris-outsidecourtroom" style="color: rgb(255, 255, 255);">So, what exactly was happening in the minds of people outside the courtroom?</span>
+    <button class="closePopup">Close</button>
+    </div> 
+
+    <div id="juris-outsidecourtroom" class="popup" style="display:none;"><span style="font-style: italic;">Jurisgenesis pt 3.</span> In general, meaning-generation was rich, contradictory, and confused.
+    From one perspective, there was real fear about the Soviet Union, especially encouraged by government propaganda. 
+    At the same time, throughout US history, people have often had some instinct that their privacy should be respected and surveillance is wrong, despite sometimes the law coming down against it (e.g. the "paroxysm of national anger” at the 1844 postal espionage case, the rallying around Olmstead during prohibition in 1928, the satirical "Some Fun with the FBI” New Yorker article from 1944), the "allegations of domestic spying” that "sent a shock wave…across the nation, and <span class="popuplink" data-target="ettahulme-1974-opinion" style="color: cyan;">countless</span> <span class="popuplink" data-target="herbert-block-watergate" style="color: rgb(23, 170, 170);">politcial</span> <span class="popuplink" data-target="block-opinion" style="color: rgb(149, 249, 249);">cartoons</span>—even if people they don’t take action corresponding to their outrage (Vincent, McKelway, Abbott, Johnson, Hulme, Block).
+    There's also a <span class="popuplink" data-target="scandal" style="color: rgb(255, 255, 255);">media enthrallment</span> with government infringements of privacy that in some ways transcends the power of normative judgements one way or another. Maybe it's because there's this kind of strange voyeurism implicated in an external body looking through people’s private lives. In addition, impedance on privacy attracts attention because it inflames American individualism.
+    This means that part of the overwhelming popularity of pro-privacy arguments may come from a neoliberal, ego-centric position that A) only holds when the citizen sees the surveilled as relatable enough to project onto (read: citizen, human, white) and B) triggers individualist paranoia, e.g. the white anarchist stereotype who goes down countless VPN rabbit holes while isolating themselves from broader shared struggles. 
+    However, even this individualist impulse can be harnessed for collective paranoia–used to get people to act more securely in their own communication, to put in the time to understand intentionally opaque technology and learn DIY techniques, gesturing towards more prepared, capable communities.
+    Here, the atomized extremists of the political compass may come together against the centrists who fall further behind in a battle set in a status quo that gets harder to defend with each passing day.
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="scandal" class="popup" style="display:none;"><span style="font-style: italic;">Scandal.</span> The media’s fascination with privacy invasion finds its apotheosis in the modern scandal. Consider the 1972 <span class="popuplink" data-target="watchingwatergate" style="color: cyan;">Watergate scandal</span>, where Richard Nixon "lied to the American people in an attempt to cover up a late-night GOP break-in to the Democratic presidential campaign headquarters” (loch t johnson xiii).
+    As Baudrillard puts it, "the simulacrum is never what hides the truth—it is truth that hides the fact that there is none.” By being a spectacular malfunction of the law, scandal gestures towards a world in which the laws are functioning normally, correctly.
+    Thus, "the denunciation of scandal is always an homage to the law.” In this way, despite the exposure of the scandal and Nixon’s resignation, perhaps the operation may have functioned as a victory for the government in the psychological sphere. Furthermore, the embarrassing exposure of the extent of government surveillance functions to intimidate people.
+    Momentum generated by the outrage at Watergate’s privacy violations died out over the course of the follow-up Church Committee hearings, as TV coverage waned and public interest turned to other things. 
+    The scandal and the subsequent punishment brought people through emotional catharsis. Spectacles such as this are <span class="popuplink" data-target="spectacle" style="color: cyan;">performances</span> that simulate conflict and resolution, whether or not there is corresponding political action. While the effects of the carceral state are deeply tangible and violent, in many ways, the court is a performance in service of itself, reproducing its own symbol. 
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="conclusion" class="popup" style="display:none;"><span style="font-style: italic;">Feeding ourselves.</span> Since legal meaning comes from outside the law anyway, the path forward is not reform but redirection, harnessing extralegal instincts toward collective counter-action and building outside the state. Surveillance is the perfect synecdoche for this: it distills the cost-benefit logic of governance down to how much violation we are willing to absorb in exchange for the promise of security. When Ford expressed fatigue about constantly having to hear America being called the "bad guy” during the Church Committee hearings, he revealed exactly whose comfort the system is built to protect. 
+    The scope of this project does not allow for delving deeply into how to fix the situation, so it is ultimately not a prescriptive argument. But in order to avoid being a purely critical essay, I <span class="popuplink2" data-target="list1 list2 list3 list4 list5 list6" style="color: rgb(255, 255, 255);">list</span> some principles that may act as salve while we are in a country whose conventional channels for change will not bring the justice we want. This is to be an alternative to legislation.
+    <button class="closePopup">Close</button>
+    </div>
+
+    <div id="list1" class="popup" style="display:none;"> Opacity. We can utilize our own tools to withhold information. This can involve leaving phones at home, not participating in the like-based economy, and not engaging. This brings to mind the famous quote from writer and theorist Édouard Glissant, who says in Caribbean Discourse, "We demand the right to opacity.” Note that the quote isn't that "I" deserve the right, it's "we," and it refers not only to individuals but to cultures, things, art, people, anything. The collective opacity goes well with collective privacy.
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="list2" class="popup" style="display:none;"> Counter-surveillance. Rather than waiting for our nation’s leadership to tell us what level of privacy violation we should tolerate, where their view of the greater good is not resonant, we can act as non-state community entities within the state that define for ourselves what we see as legal meaning and seek to support it in our own ways. We follow our own jurisgenesis against the suppressive interpretation of the courts. Models for this subversion are groups like the Black Panther Party, which enacted counter-intelligence. 
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="list3" class="popup" style="display:none;">Performance and "trickster” ethos. This leans into the inherently spectacular nature of the court process. Rather than pretending it will have lasting effects in the results it thinks it's enacting as justice, we can take advantage of the public media presence and utilize the platform and attention to communicate our own narratives of the system. This squares with Baudrillard’s idea that people's perceptions become more important than the actual events. Rather than driving ourselves crazy with the fact that we can't escape the cycles of even our own protest of the spectacle becoming a spectacle, we can playfully lean into it. For example, another reading of the Coplon case would be to see her performance of innocence as a parody of the system. Furthermore, she refuses to engage with liberal centrist media, letting the absurdity speak for itself rather than legitimizing the proceedings by explaining herself. "We’ve had all kinds of requests for interviews, for books, but it has been our steady policy to refuse,” her husband said. "Other people are interested in posterity. We’re not” (Roberts).
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="list4" class="popup" style="display:none;">Community caretaking. This is the classic anarchist idea of protecting ourselves, taking care of ourselves, rather than relying on outside forces such as police or the state more generally. Examples of this are the <span class="popuplink" data-target="breakfast" style="color: cyan;">free breakfast program</span> started by the Black Panther Party, mutual aid, and community libraries. This doesn't necessarily speak to the surveillance-specific issue, but working towards liberation from the state is an important part of preparing oneself for resistance. It’s interesting to consider the idea that we don’t "live” in "capitalism” (or even technofeudalism or what have you) as a physical fact. Power, such as a government being able to decapitate you, is real, but we can also acknowledge, as Étienne de La Boétie argues, that servitude is to some degree voluntary–it is a choice to submit oneself to authority; if not, we may engage in civil disobedience. As they say, the best way to bring about the end of capitalism is to pretend that it’s already here, and see the multiplicity of societies that are already functioning, rather than the capitalist-realist "no alternative” type of mindset.
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="list5" class="popup" style="display:none;">Alternative infrastructure and means of production. Rather than skirting the technology issue, which is often the default for leftism, we can embrace technology, but instead of relying on mass companies such as Meta, we can work on building community-based networks. An example of this is <span class="popuplink" data-target="p2p" style="color: cyan;">Peer-to-Peer networks</span>, open-source code, DIY electronics communities, and internet forums, or historical ones such as Bolivian Miners’ Radio or Zapatista early internet use. There are still inherent problems–it’s not like we can pop up with a "leftist” data center complex competing with the "evil ChatGPT” version a few miles over, but there is definitely a long way to go before that point. This embrace of technology, combined with a reduction in consumerism, can be powerful. I hope to explore resistance from a technological standpoint more deeply in future projects.
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="list6" class="popup" style="display:none;">Harm reduction. This is a pragmatic way of looking at legal systems in the short term. Inconvenient as it may be, dismissing government altogether because one can make an intellectually watertight existential argument against it can be an overly black-and-white view of the situation. This is not reform; we must not give an inch in terms of the radicality of the agenda. However, the idea of harm reduction can be helpful, metaphorically drawing from the concept’s use in substance use contexts, e.g., opiate addiction is a larger struggle, but providing access to clean needles has real effects that address the immediate violence people are facing. When some laws would obviously make a difference in government, like limiting big tech companies from mining us for data or using certain addictive algorithms, we shouldn’t necessarily oppose them. Unless one supports a full accelerationist mindset, but that’s a whole other thing.
+    <button class="closePopup">Close</button>
+    <button class="closeAllPopup" onclick="closeall()">Close all list</button>
+    </div>
+
+    <div id="fireworks" class="popup" style="display:none;">
+        <img src="fireworks.gif" alt="Yay"></img>
         <button class="closePopup">Close</button>
     </div>
 
-    <div id="conclusion" class="popup" style="display:none;">
-        <p>
-            Brief conclusion even though I dont wanna be prescriptive to avoid seeming avoidant–change laws via harm reduction. Also performance, trickster (coplon). Surveil the surveillor (BPP countersurveillance). Continue jurisgenesis and alt societies making meaning+___
-        </p>
+    <div id="rain" class="popup" style="display:none;">
+        <img src="rain.gif" alt="Sad"></img>
         <button class="closePopup">Close</button>
     </div>
 
     <div id="tree-img" class="popup" style="display:none;">
         <img src="poisonoustree.png" alt="Poisonous Tree"></img>
-        <p>marinaphx</p>
         <button class="closePopup">Close</button>
     </div>
 
     <div id="coplon-img" class="popup" style="display:none;">
         <img src="coplon.png" alt="Judith Coplon"></img>
-        <p>Arthur Brower/The New York Times</p>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="spectacle" class="popup" style="display:none;">
+        <img src="a-step-beyond.jpg" alt="Spectacle"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="lbj" class="popup" style="display:none;">
+        <img src="bettmanviagetty.png" alt="LBJ"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="mlk-img" class="popup" style="display:none;">
+        <img src="civilrightsteaching.png"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="breakfast" class="popup" style="display:none;">
+        <img src="donaldcunningham.jpg"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="p2p" class="popup" style="display:none;">
+        <img src="cyber-agents-inc.jpg"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="block-opinion" class="popup" style="display:none;">
+        <img src="block-opinion.png"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+    <div id="ettahulme-1974-opinion" class="popup" style="display:none;">
+        <img src="ettahulme-1974-opinion.jpg"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+     <div id="herbert-block-watergate" class="popup" style="display:none;">
+        <img src="herbert-block-watergate.jpg"></img>
+        <button class="closePopup">Close</button>
+    </div>
+
+     <div id="watchingwatergate" class="popup" style="display:none;">
+        <img src="Los-Angeles-Times Photographic Archive-UCLA-Library.jpg"></img>
         <button class="closePopup">Close</button>
     </div>
 
@@ -190,10 +358,56 @@
             //makes visible 
             document.getElementById(target).style.display = 'block';
 
+            // FIX: Ensure it's on top of other things
+            targetElement.style.zIndex = "1000"; 
+            targetElement.style.display = 'block';
 
         }, false);
 
     }
+
+    //split for the list 
+    // Change "querySelector" to "querySelectorAll" and add the .forEach wrapper
+    document.querySelectorAll('.popuplink2').forEach(function(individualLink) {
+        
+        individualLink.addEventListener('click', function() {
+            const targets = this.dataset.target.split(' '); 
+
+            targets.forEach(id => {
+                const targetElement = document.getElementById(id);
+                if (targetElement) {
+                    const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+                    
+                    targetElement.style.left = getRandom(5, 70) + '%'; 
+                    targetElement.style.top = getRandom(5, 70) + '%';
+                    targetElement.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                    
+                    targetElement.style.zIndex = "1000"; 
+                    targetElement.style.display = 'block';
+                }
+            });
+        });
+
+    });
+    // document.querySelector('.popuplink2').addEventListener('click', function() {
+    //     const targets = this.dataset.target.split(' '); 
+
+    //     targets.forEach(id => {
+    //         const targetElement = document.getElementById(id);
+    //         if (targetElement) {
+    //             // FIX: Move math INSIDE the loop so each box gets a NEW position
+    //             const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+                
+    //             targetElement.style.left = getRandom(5, 70) + '%'; 
+    //             targetElement.style.top = getRandom(5, 70) + '%';
+    //             targetElement.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                
+    //             // FIX: Ensure it's on top of other things
+    //             targetElement.style.zIndex = "1000"; 
+    //             targetElement.style.display = 'block';
+    //         }
+    //     });
+    // });
 
     //handles the close buttons 
     var closeBox = document.getElementsByClassName("closePopup");
@@ -203,6 +417,14 @@
             let parent = closeBox[i].parentElement;
             parent.style.display = 'none';
         }, false);
+    }
+
+    var closeAllBox = document.getElementsByClassName("closeAllPopup");
+    //close all in list
+    function closeall() {
+        for (let i = 0; i < closeAllBox.length; i++) {  // let, not var
+        closeAllBox[i].parentElement.style.display = "none";
+        } 
     }
 
     // Make the DIV element draggable
@@ -247,6 +469,34 @@
         document.onmousemove = null;
     }
     }
+
+    function openAllPopups() {
+        var allPopups = document.getElementsByClassName("popup");
+    
+        for (let i = 0; i < allPopups.length; i++) {
+            // Random position math (keeps them from stacking)
+            const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+            
+            allPopups[i].style.left = getRandom(5, 70) + '%'; 
+            allPopups[i].style.top = getRandom(5, 70) + '%';
+            allPopups[i].style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            
+            // Show the popup
+            allPopups[i].style.display = 'block';
+            allPopups[i].style.zIndex = "1000";
+        }
+    }
+
+    
+
+    function closeAllPopups() {
+    var allPopups = document.getElementsByClassName("popup");
+
+    for (let i = 0; i < allPopups.length; i++) {
+        allPopups[i].style.display = 'none';
+    }
+    }
+        
     </script>
     
 </body>
